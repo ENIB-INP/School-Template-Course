@@ -46,11 +46,14 @@ Hello, this is a LaTeX document!
 
 Compile:
 
-* Ubuntu: `pdflatex main.tex`
-* Windows: `pdflatex main.tex`
-* GitHub Actions: automatically via workflow
+* Ubuntu: `make`
+* Windows: `make`
 
 Output: `main.pdf`
+
+Delete compiled files :
+* Ubuntu: `make clean`
+* Windows: `make clean`
 
 ---
 

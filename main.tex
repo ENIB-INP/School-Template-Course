@@ -1,34 +1,43 @@
 \documentclass[12pt]{article}
 
-% Encodage et langues
+% Encoding and languages
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 
-% Mise en page et polices
+% Page layout and fonts
 \usepackage[a4paper, margin=2.5cm]{geometry}
 \usepackage{lmodern}
 \usepackage[default]{raleway}
 
-% Maths
+% Math packages
 \usepackage{amsmath, amssymb}
 
-% Graphiques et mise en forme
+% Graphics and formatting
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{listings}
 \usepackage{algorithm}
 \usepackage{algorithmic}
 
-% Liens et URLs
+% Links and URLs
 \usepackage{xurl}
 \usepackage[hidelinks]{hyperref}
 \usepackage{tocloft} % For dotted leaders in TOC
 
+% Headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % clear default headers/footers
+\fancyfoot[L]{\nouppercase{\leftmark}} % current section name on the left
+\fancyfoot[R]{professor.email@example.com} % professor email on the right
+\renewcommand{\headrulewidth}{0pt} % remove header line
+\renewcommand{\footrulewidth}{0.4pt} % line above footer
+
 % Dotted lines in TOC
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 
-% Paramètres listings
+% Listings settings
 \lstset{
     basicstyle=\ttfamily\footnotesize,
     backgroundcolor=\color{gray!10},
